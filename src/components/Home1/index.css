@@ -1,0 +1,269 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 90%;
+    max-width: 1110px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .home-container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 70px;
+      margin-bottom: 20px;
+      font-family: "sans-serif";
+    } 
+     .btn-cont{
+    display: flex;
+    padding-right: 20px;
+    padding: 30px;
+  }
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+    .home-content {
+      align-items: flex-start;
+    }
+  }
+  
+  .home-mobile-img {
+    width: 206px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .home-mobile-img {
+      display: none;
+    }
+  }
+  
+  .home-desktop-img {
+    width: 50%;
+    max-width: 550px;
+    margin-left: 85px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .home-desktop-img {
+      display: none;
+    }
+  }
+  
+  .home-heading {
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 28px;
+    color: #1e293b;
+    text-align: center; 
+  } 
+  .home-description {
+    font-family: "sans-serif";
+    margin-top: 36px;
+    font-size: 10px;
+    
+    color: #64748b;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .home-heading {
+      font-size: 46px;
+      text-align: left; 
+      font-family: "sans-serif";
+    }
+  }
+  
+  .home-description {
+    font-family: "sans-serif";
+    margin-top: 36px;
+    font-size: 30px;
+    line-height: 28px;
+    color: #64748b;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .home-description {
+      font-size: 18px;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+  
+  .shop-now-button {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    background-color: #0967d2;
+    margin-top: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .shop-now-button {
+      width: 150px;
+      font-size: 16px; 
+      margin-right: 20px;
+    }
+  }
+
+ /* Home.css */
+
+/* ... existing styles ... */
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #191c24;
+  
+  padding: 20px;
+  margin: 5px;
+}
+
+.counter {
+  margin: 0 20px;
+  text-align: center;
+  color: #ffff;
+  font-size: 30px;
+  opacity: 0; /* Start with counters hidden */
+  transform: translateY(20px); /* Move counters down initially */
+}
+
+.counter p {
+  margin: 5px 0 0 0;
+  color: #ffff;
+  font-size: 30px;
+}
+
+/* Animation */
+.counter.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+}
+
+
+
+/* Home.css */
+
+/* ... existing styles ... */
+
+/* Courses Carousel */
+.courses-carousel-container {
+  margin-top: 30px;
+}
+
+.courses-carousel {
+  width: 50%;
+  margin: auto;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.course-item img {
+  width: 50%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.course-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.course-content p {
+  color: #555;
+}
+
+
+
+
+
+/* Home.css */
+
+.animated-row {
+  animation: moveRow 2s ease-in-out infinite alternate; /* Adjust the animation duration and easing as needed */
+}
+
+@keyframes moveRow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px); /* Adjust the horizontal distance of the animation */
+  }
+}
+
+/* ... Existing styles ... */
+
+.img-c{
+  width: 60px;
+  height: 60px;
+}
+
+.c-container{
+  display: flex;
+  justify-content: center;
+
+}
+.inner-container{
+  display: flex;
+  margin: 10px;
+}
+
+
+
+/* Home.css (or create a separate InnerCarousel.css file) */
+
+.inner-carousel {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.img-c {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}

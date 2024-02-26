@@ -1,0 +1,160 @@
+/* Navbar.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #336AEA;
+    color: #fff;
+    padding: 15px 0; 
+    position: relative;
+    
+  }
+  
+  .navbar-container {
+    
+    display: flex;
+    justify-content: space-between; 
+    height: 50px;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5em;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffcc00;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100vh;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #336AEA;
+      text-align: center;
+    }
+    .navbar-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+  
+  .navbar-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* Add other navbar styles */
+  }
+  
+  .nav-item {
+    position: relative;
+    margin: 0 5px;
+    text-align: center;
+    /* Other nav-item styling */
+  }
+
+  .btn-sign{
+    border-radius: 4px;
+    border: solid 2px;
+    border-color: #fff;
+    padding: 8px;
+    background-color: #336AEA; 
+    color: #fff;
+  }
+  
+  .logo{
+    width: 65px;
+  }
+
+
+
+
+  /* Add this at the end of your existing CSS file */
+@media only screen and (max-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change the background color as needed */
+    text-align: center;
+    z-index: 1;
+    opacity: 0.95;
+    transform: translateY(${isOpen ? '0' : '-100%'});
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}

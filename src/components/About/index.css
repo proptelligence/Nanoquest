@@ -1,0 +1,63 @@
+/* General styling for the AboutUsSection component */
+.about-us-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f8f8f8; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-section h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-us-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-us-section .mission-statement, 
+.about-us-section .lorem-ipsum,
+.about-us-section .join-community,
+.about-us-section p {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.about-us-section .join-community strong {
+  color: #007bff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 60px 0;
+  }
+
+  .about-us-section h2 {
+    font-size: 2em;
+  }
+
+  .about-us-section .mission-statement, 
+  .about-us-section .lorem-ipsum,
+  .about-us-section .join-community,
+  .about-us-section p {
+    font-size: 1em;
+  }
+}
+
+.container-1{
+  background-color: white; 
+  width: 800px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
